@@ -17,21 +17,21 @@ router.get("/", (req, res) => {
 
 router.post("/add", upload.single("image"), async (req, res) => {
 
-  // const imagekit = new ImageKit({
-  //   publicKey: "public_M0PAK4NmC1d2995cVHB6hjiBgaE=",
-  //   privateKey : "private_KT7FkfaTOTLNy6lVG+V7iKE2ba4=",
-  //   urlEndpoint: "https://ik.imagekit.io/ls436o8px",
-  // });
+  const imagekit = new ImageKit({
+    publicKey: process.env.PUBLIC_KEY  ,
+    privateKey :process.env.PRIVATE_KEY,
+    urlEndpoint: process.env.URLENDPOINT ,
+  });
 
 
-  // const result = await imagekit.upload({
-  //   file : req.file.buffer,
-  //   fileName : req.file.originalname,
-  //   isPrivateFile : false,
-  //   isPublished : true
-  // })
+  const result = await imagekit.upload({
+    file : req.file.buffer,
+    fileName : req.file.originalname,
+    isPrivateFile : false,
+    isPublished : true
+  })
 
-  // const imageUrl = result.url
+  const imageUrl = result.url
 
  
   const { title, description, category, price } = req.body;

@@ -17,7 +17,7 @@ const AddProducts = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         let formData = new FormData(e.target);
-        axios.post("https://project-ecommerce-react-backend-rm5q.onrender.com/products/add", formData)
+        axios.post("https://project-ecommerce-react-backend-rm5q.onrender.com/admin/products/add", formData)
             .then((res) => {
                 console.log(res);
                 navigate("/")
@@ -44,10 +44,10 @@ const AddProducts = () => {
                     />
                 </div>
                 
-                <ImageUploader/>
+                {/* <ImageUploader/> */}
                 <br />
 
-                {/* <div className="formGroup">
+                <div className="formGroup">
                     <label htmlFor="image">Image</label>
                     <input
                         type="file"
@@ -56,7 +56,7 @@ const AddProducts = () => {
                         accept="image/*"
                         onChange={(e) => setimage(e.target.files[0])}
                     />
-                </div> */}
+                </div>
 
                 <div className="formGroup">
                     <label htmlFor="description">Description</label>

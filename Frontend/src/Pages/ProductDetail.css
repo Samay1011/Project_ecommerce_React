@@ -29,7 +29,10 @@
     width: 50%;
 } */
 
-html, body{
+
+
+
+/* html, body{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -58,4 +61,67 @@ html, body{
     padding: 0px 30px 0px 10px;
     gap: 20px;
 }
+ */
 
+
+ html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-size: 16px; /* Base font size for rem scaling */
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d7d7d7;
+    padding: 5vh 5vw;
+}
+
+.pr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0.125rem solid black;
+    border-radius: 2rem;
+    background-color: #fff;
+    width: 100%;
+    max-width: 90vw;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Image section */
+.pr img {
+    width: 100%;
+    max-width: 30vw;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* Text section */
+.pr > div:last-child {
+    flex: 1;
+    min-width: 250px;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}

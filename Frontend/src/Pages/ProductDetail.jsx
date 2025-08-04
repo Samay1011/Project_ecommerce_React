@@ -17,7 +17,7 @@ const ProductDetail = () => {
 
     const getProductDetail = async()=>{
 
-       await axios.get("https://project-ecommerce-react-backend-rm5q.onrender.coms/products/"+productId)
+       await axios.get("https://project-ecommerce-react-backend-rm5q.onrender.com/products/"+productId)
         .then((res)=>{
             console.log(res);
             setProductData(res.data.product);

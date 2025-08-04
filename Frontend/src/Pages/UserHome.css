@@ -1,4 +1,4 @@
-html, body{
+/* html, body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -8,28 +8,28 @@ html, body{
 a{
     color: black;
     text-decoration: none;
-}
-
+} */
+/* 
 .container {
     margin-top: 50px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    /* display: grid; */
+    /* grid-template-columns: repeat(4,1fr); */
     /* gap: 20px; */
-    padding-left: 40px;
-    background-color: rgb(247, 247, 247);
-}
+    /* padding-left: 40px; */
+    /* background-color: rgb(247, 247, 247); */
+/* } */
 
-.container .card {
+/* .container .card {
     border : 2px solid black;
     height: 375px;
     width: 255px;
     border-radius: 20px ;
     padding: 15px;
     background-color: #fff;
-}
+} */ 
 
 /* .card .top {
     width: 100%;
@@ -42,7 +42,7 @@ a{
     height: 100%;
 } */
 
-h4{
+/* h4{
   position: relative;
   bottom: -23px
 }
@@ -62,11 +62,96 @@ nav .search input {
     width: 500px;
     padding: 5px;
     border-radius: 5px;
-    border: none;
-}
+    border: none; */
+/* }
 
 .right{
     position: relative;
-    /* right : -260px; */
-    /* top : 10px */
+    right : -260px; 
+     top : 10px
+} */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 248);
+    font-size: 16px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(161, 219, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    /* gap: 1rem; */
+    flex-wrap: wrap;
+}
+
+nav .left h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+nav .search input {
+    width: 40vw;
+    max-width: 500px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.right {
+    font-size: 1.5rem;
+    /* padding-right: 1rem; */
+}
+
+/* Product Grid */
+.container {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 5vw;
+    background-color: rgb(247, 247, 247);
+    justify-items: center;
+}
+
+/* Individual Card */
+.container .card {
+    border: 0.125rem solid black;
+    width: 90%;
+    max-width: 255px;
+    height: auto;
+    border-radius: 1.25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.container .card:hover {
+    transform: scale(1.02);
+}
+
+.container .card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+h4 {
+    position: relative;
+    bottom: -1.5rem;
+    font-size: 1rem;
 }
