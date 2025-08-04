@@ -4,6 +4,7 @@ const indexRouter = require("./routes/index.router")
 const userRouter = require("./routes/user.router")
 
 const cartRouter = require("./routes/cart.router")
+const loginRouter = require("./routes/login.router")
 require("dotenv").config()
 const app = express()
 const path = require("path")
@@ -24,6 +25,7 @@ app.use("/", indexRouter)
 app.use("/users", userRouter)
 app.use("/products",productRouter)
 app.use("/cart", cartRouter)
+app.use("/login",loginRouter)
 
 
 module.exports = app

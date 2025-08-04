@@ -7,6 +7,7 @@ import Home from './Pages/Home'
 import ProductDetail from './Pages/ProductDetail'
 import UserHome from './Pages/UserHome'
 import Cart from './Pages/Cart'
+import Login from './Pages/login'
 import UserProduct from './Pages/UserProduct'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./Pages/CartContext";
@@ -25,6 +26,7 @@ const App = () => {
           <Route  path='/admin/' element={<Home/>}/>
           <Route  path='/admin/products/add' element={<AddProducts/>}/>
           <Route  path='/admin/products/detail/:productId'  element={<ProductDetail/>}/>
+          <Route  path='/login'  element={<Login/>}/>
           </Routes>
       {/* </Router> */}
     {/* </CartProvider> */}

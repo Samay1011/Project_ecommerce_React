@@ -36,8 +36,9 @@ const Home = () => {
             <div className="right">
               {/* <Link to="/admin/products/add">Add new Product</Link> */}
               <Link to="/Cart"><i class="ri-shopping-cart-fill"></i></Link>
+              <Link to="/login" className="ad"><h2>Admin</h2></Link>
             </div>
-        </nav>
+        </nav>      
 
      <div className="container">
 
