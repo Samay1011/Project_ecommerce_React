@@ -10,6 +10,7 @@ import Cart from './Pages/Cart'
 import UserProduct from './Pages/UserProduct'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./Pages/CartContext";
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
         <Route  path='/admin/products/detail/:productId'  element={<ProductDetail/>}/>
       </Routes>  */}
 
+        <Footer />
     </div>
 
 
