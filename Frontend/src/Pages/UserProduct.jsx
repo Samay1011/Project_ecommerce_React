@@ -55,6 +55,7 @@ const ProductDetail = () => {
                 <div>
                   <h1>{productData.title}</h1><br />
                   <h2>Price: ₹{productData.price}</h2><br />
+                  <b>Description:</b>
                   <p>{productData.description}</p><br />
                   <p><b>Category:</b> {productData.category}</p><br />
 
