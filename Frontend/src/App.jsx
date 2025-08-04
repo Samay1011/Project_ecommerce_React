@@ -7,7 +7,8 @@ import Home from './Pages/Home'
 import ProductDetail from './Pages/ProductDetail'
 import UserHome from './Pages/UserHome'
 import Cart from './Pages/Cart'
-import Login from './Pages/login'
+// import Login from './Pages/Login'
+import Login from './Pages/Login'
 import UserProduct from './Pages/UserProduct'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./Pages/CartContext";
